@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân - Embedded Systems, Hardware và IoT">
+  <title>NL Duc | Engineering Portfolio</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b1120; --panel:#151e31; --text:#e9eef8; --muted:#9baac0; --accent:#67e8f9; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; }
+    a { color:var(--accent); text-decoration:none; }
+    .container { max-width:980px; margin:auto; padding:0 24px; }
+    header { border-bottom:1px solid #253148; }
+    nav { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; padding:18px 0; }
+    .logo { font-weight:800; font-size:1.25rem; letter-spacing:.04em; }
+    .links { display:flex; gap:22px; flex-wrap:wrap; }
+    .links a { color:var(--text); font-size:.92rem; }
+    .hero { padding:100px 0 80px; }
+    .eyebrow { color:var(--accent); font-weight:700; letter-spacing:.1em; text-transform:uppercase; font-size:.85rem; }
+    h1 { font-size:clamp(2.3rem,6vw,4.3rem); line-height:1.15; margin:14px 0 20px; }
+    h1 span { color:var(--accent); }
+    .intro { max-width:660px; color:var(--muted); font-size:1.1rem; }
+    .button { display:inline-block; margin-top:20px; background:var(--accent); color:#07121d; font-weight:750; padding:12px 22px; border-radius:10px; }
+    section { padding:32px 0 48px; }
+    h2 { font-size:1.65rem; margin:0 0 22px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+    .card { background:var(--panel); border:1px solid #26354e; border-radius:15px; padding:24px; }
+    .card h3 { margin:0 0 10px; }
+    .card p, .muted { color:var(--muted); margin:0; }
+    .tag { display:inline-block; border:1px solid #375269; color:var(--accent); border-radius:100px; padding:5px 12px; margin:5px 6px 5px 0; font-size:.88rem; }
+    footer { margin-top:36px; border-top:1px solid #253148; padding:24px 0; color:var(--muted); font-size:.9rem; }
+    @media(max-width:600px) { .hero { padding:65px 0 45px; } .links { gap:12px; } }
+  </style>
+</head>
+<body>
+  <header><div class="container"><nav>
+    <a class="logo" href="#home">NL DUC<span style="color:var(--accent)">.</span></a>
+    <div class="links"><a href="#about">Giới thiệu</a><a href="#skills">Kỹ năng</a><a href="#projects">Dự án</a><a href="#contact">Liên hệ</a></div>
+  </nav></div></header>
+  <main class="container">
+    <div class="hero" id="home">
+      <div class="eyebrow">Engineering Student · Portfolio</div>
+      <h1>Xin chào, mình là <span>Đức.</span></h1>
+      <p class="intro">Mình là sinh viên ngành Tin học Công nghiệp và Tự động hóa tại Đại học Bách khoa Hà Nội, quan tâm đến Embedded Systems, Hardware Design và IoT.</p>
+      <a class="button" href="#projects">Khám phá dự án ↓</a>
+    </div>
+    <section id="about"><h2>Về mình</h2><p class="muted">Mình thích tìm hiểu cách phần cứng và phần mềm phối hợp để tạo ra các hệ thống thực tế. Đây là website cá nhân đầu tiên của mình, nơi lưu lại quá trình học tập và những dự án đã thực hiện.</p></section>
+    <section id="skills"><h2>Kỹ năng & công cụ</h2><div><span class="tag">C / C++</span><span class="tag">Python</span><span class="tag">Embedded Systems</span><span class="tag">ESP32</span><span class="tag">Altium Designer</span><span class="tag">Linux</span><span class="tag">IoT</span></div></section>
+    <section id="projects"><h2>Dự án tiêu biểu</h2><div class="grid">
+      <article class="card"><h3>ESP32-S3 Assistant</h3><p>Thiết kế mạch và tích hợp cảm biến, màn hình, âm thanh và các giao tiếp ngoại vi.</p></article>
+      <article class="card"><h3>QUIC for IoT</h3><p>Nghiên cứu giao thức QUIC và xây dựng môi trường thử nghiệm mạng cho các thiết bị IoT.</p></article>
+      <article class="card"><h3>Phát hiện bất thường bằng PCA</h3><p>Xử lý dữ liệu chuỗi thời gian và phát hiện bất thường bằng phương pháp phân tích thành phần chính.</p></article>
+    </div></section>
+    <section id="contact"><h2>Liên hệ</h2><p class="muted">Bạn có thể bổ sung email, GitHub và LinkedIn của mình tại đây.</p></section>
+  </main>
+  <footer><div class="container">© 2026 NL Duc · nlduc7125.id.vn · Made with HTML & CSS</div></footer>
+</body>
+</html>
